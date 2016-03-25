@@ -58,8 +58,9 @@ label {
 	}
 
 	label.background {
-		right: 50%;
-		text-align: left;
+		right: 18%;
+		margin-top: 2em;
+		text-align: right;
 	}
 	
 		label.background > span {
@@ -67,8 +68,9 @@ label {
 		}
 	
 	label.foreground {
-		left: 50%;
-		text-align: right;
+		left: 54%;
+		text-algn: right;
+		margin-top: -2em;
 	}
 	
 		label.foreground > span {
@@ -77,13 +79,14 @@ label {
 
 
 	input {
+		
 		position: relative;
 		display: block;
 		min-width: 8em;
 		width: 8em;
 		padding: .2em .5em .1em;
 		margin-top: -.1em;
-		border: thin solid rgba(0,0,0,.3);
+		border:  solid rgba(0,0,0,.3);
 		background: hsla(0,0%,90%,.9);
 		color: #333;
 		text-shadow: 0 .05em 1px white;
@@ -94,23 +97,24 @@ label {
 		input#background {
 			padding-right: 2em;
 			margin-right: -.1em;
-			border-radius: .3em 0 0 .3em;
+			border-radius: .3em ;
 			text-align: right;
 		}
 		
 		input#foreground {
-			padding-left: 2em;
-			margin-left: -.1em;
-			border-radius: 0 .3em .3em 0;
+			padding-right: 2em;
+			margin-right: -.1em;
+			border-radius: .3em;
+			text-align:right;
 		}
 	
 output {
 	display: block;
 	position: relative;
-	width: 3em;
-	padding: 1em 0;
-	border: thin solid rgba(0,0,0,.4);
-	margin: -.1em auto 0;
+	width: 1em;
+	padding: 2em 2em;
+	border:  solid rgba(0,0,0,.6);
+	margin: -1em auto 0;
 	background: hsl(0, 0%, 50%) -35% -35%;
 	background-size: 142% 142%;
 	text-align: center;
@@ -239,7 +243,7 @@ output:hover + #results {
 	
 button {
 	padding: .2em .5em .1em;
-	margin-top: .2em;
+	margin-top: .6em;
 	border: 1px solid rgba(0,0,0,.5);
 	border-radius: .3em;
 	box-shadow: 0 1px white inset,

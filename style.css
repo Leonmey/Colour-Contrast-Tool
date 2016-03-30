@@ -187,11 +187,9 @@ output .error {
 	overflow: auto;
 }
 
-/*#foregroundDisplay {
-	left: 50%;
-	right: 50%;
-	text-align: left;
-}*/
+#foregroundDisplay {
+	display: none;
+}
 
 #results {
 	position: absolute;
@@ -254,8 +252,10 @@ output:hover + #results {
 }
 
 button {
+	position: relative;
 	padding: .2em .5em .1em;
-	margin-top: .6em;
+	left:15rem;
+	top:-20rem;
 	border: 1px solid rgba(0,0,0,.5);
 	border-radius: .3em;
 	box-shadow: 0 1px white inset,
@@ -280,12 +280,6 @@ button:focus {
 button:active {
 	box-shadow: 0 1px hsla(0, 0%, 100%, .3),
 	0 1px .3em .05em rgba(0,0,0,.6) inset;
-}
-
-.twitter-share-button {
-	position: absolute !important;
-	top: 10px;
-	right: 10px;
 }
 
 canvas {

@@ -58,9 +58,10 @@ label > span {
 }
 
 label.background {
-	/*right: 18%;*/
-	margin: 13.5em -4.5em;
-	text-align: right;
+	left: 47%;
+	margin: 10% auto;
+	text-align: center;
+
 }
 
 label.background > span {
@@ -68,9 +69,9 @@ label.background > span {
 }
 
 label.foreground {
-	/*left: 54%;*/
-	text-align: right;
-	margin: 5.5em -4.5em;
+	left: 47%;
+	text-align: center;
+	margin: 4% auto;
 }
 
 label.foreground > span {
@@ -112,9 +113,9 @@ output {
 	display: block;
 	position: relative;
 	width: 1em;
-	padding: 4em 4em;
-	border:  solid rgba(0,0,0,.6);
-	margin: 4em 8em;
+	padding: 3em 3em;
+	border:  8px solid rgba(0,0,0,.6);
+	margin: 6% 35%;
 	background: hsl(0, 0%, 50%) -35% -35%;
 	background-size: 142% 142%;
 	text-align: center;
@@ -151,11 +152,19 @@ output .error {
 	padding: 13em 1em 1em;
 }
 
-.color-display h1,
+.color-display h1 {
+	position: absolute;
+	left: 48%;
+	top: 55%;
+	max-width: 48rem;
+	margin-top: 0;
+	direction: ltr;
+}
+
 .color-display p {
-	position: relative;
-	left: 19rem;
-	top: 25rem;
+	position: absolute;
+	left: 35%;
+	top: 60%;
 	max-width: 48rem;
 	margin-top: 0;
 	direction: ltr;

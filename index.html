@@ -2,52 +2,66 @@
 <html lang="en">
 <head>
 
-<meta charset="utf-8" />
-<title>Contrast Ratio: Easily calculate color contrast ratios. Passing WCAG was never this easy!</title>
-<link rel="stylesheet" href="style.css" />
-<link rel="shortcut icon"  type="image/png" href="about:blank" />
-<script src="prefixfree.min.js"></script>
-
+	<meta charset="utf-8" />
+	<title>Contrast Ratio: Easily calculate color contrast ratios. Passing WCAG was never this easy!</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="shortcut icon"  type="image/png" href="about:blank" />
+	<script src="prefixfree.min.js"></script>
+	<script src="jquery-2.0.3.min.js"></script>
 </head>
 <body>
 
-<h1><a href="#"><span>Contrast</span> <strong>ratio</strong></a></h1>
+	<h1><a href="#"><span>Contrast</span> <strong>ratio</strong></a></h1>
 
-<label class="background">
-	<span>Background:</span>
-	<input id="background" value="white" autofocus />
-</label>
 
-<label class="foreground">
-	<span>Text color:</span>
-	<input id="foreground" value="hsla(200,0%,0%,.7)" />
-</label>
 
-<output tabindex="0">
-	<strong>?</strong>
-	<span class="error"></span>
-</output>
 
-<section id="results">
-	
-</section>
+	<section id="results">
 
-<section class="color-display" id="backgroundDisplay">
-	<h1>How to use</h1>
-	<p>As you type, the contrast ratio indicated will update. Hover over the circle to get more detailed information. When semi-transparent colors are involved as backgrounds, the contrast ratio will have an error margin, to account for the different colors they may be over.
-	This sample text attempts to visually demonstrate how readable this color combination is, for normal or <strong>bold</strong> text of various sizes and font styles.
-	<strong>Hint:</strong> Press the up and down keyboard arrows while over a number inside a functional color notation. Watch it increment/decrement. Try with the Shift or Alt key too!</p>
-</section>
-<button id="swap">Swap</button>
-<section id="foregroundDisplay">
-	
-</section>
+	</section>
 
-<footer></footer>
+	<section class="color-display" id="backgroundDisplay">
+		<div class="display-info"> 
+			<output tabindex="0">
+				<strong>?</strong>
+				<span class="error"></span>
+			</output>
+			<div class="input-display">
+				<label class="background">
+					<span>Background:</span>
+					<input id="background" value="white" autofocus data-wheelcolorpicker="" />
+				</label>
 
-<script src="incrementable.js" id="incrementable" async></script>
-<script src="color.js"></script>
-<script src="contrast-ratio.js"></script>
+				<button id="swap">Swap</button>
+				
+				<label class="foreground">
+					<span>Text color:</span>
+					<input id="foreground" value="hsla(200,0%,0%,.7)" />
+				</label>
+			</div>
 
-</body>
-</html>
+		</div>
+		<div class="text-display">
+			<h1>How to use</h1>
+			<p>As you type, the contrast ratio indicated will update. Hover over the circle to get more detailed information. When semi-transparent colors are involved as backgrounds, the contrast ratio will have an error margin, to account for the different colors they may be over.
+				This sample text attempts to visually demonstrate how readable this color combination is, for normal or <strong>bold</strong> text of various sizes and font styles.
+				<strong>Hint:</strong> Press the up and down keyboard arrows while over a number inside a functional color notation. Watch it increment/decrement. Try with the Shift or Alt key too!</p>
+			</div>
+
+		</section>
+		
+		<section id="foregroundDisplay">
+
+		</section>
+
+		<footer></footer>
+
+		<script src="incrementable.js" id="incrementable" async></script>
+		<script src="color.js"></script>
+		<script src="contrast-ratio.js"></script>
+
+		<script type="text/javascript" src="jquery.wheelcolorpicker.js"></script>
+		<link type="text/css" rel="stylesheet" href="wheelcolorpicker.css">
+
+	</body>
+	</html>

@@ -42,8 +42,27 @@ body > h1 strong {
 	color: black;
 }
 
+.input-display{
+	display:inline-block;
+	position: relative;
+	right:1.5rem;
+}
+
+.display-info{
+	display: block;
+	position: relative;
+	top:-5rem;
+}
+
+.text-display{
+	display: block;
+	text-align: center;
+	width: 50rem;
+	margin: auto;
+}
+
 label {
-	position: absolute;
+	position: relative;
 }
 
 label > span {
@@ -58,10 +77,7 @@ label > span {
 }
 
 label.background {
-	left: 47%;
-	margin: 10% auto;
 	text-align: center;
-
 }
 
 label.background > span {
@@ -69,9 +85,8 @@ label.background > span {
 }
 
 label.foreground {
-	left: 47%;
 	text-align: center;
-	margin: 4% auto;
+	top: 5.6rem;
 }
 
 label.foreground > span {
@@ -83,7 +98,8 @@ input {
 
 	position: relative;
 	display: block;
-	min-width: 8em;
+	min-width: 12em;
+	max-width: 12em;
 	width: 8em;
 	padding: .2em .5em .1em;
 	margin-top: -.1em;
@@ -99,23 +115,22 @@ input#background {
 	padding-right: 2em;
 	margin-right: -.1em;
 	border-radius: .3em ;
-	text-align: right;
+	text-align: left;
 }
 
 input#foreground {
 	padding-right: 2em;
 	margin-right: -.1em;
 	border-radius: .3em;
-	text-align:right;
+	text-align:left;
 }
 
 output {
-	display: block;
+	display: inline-block;
 	position: relative;
 	width: 1em;
 	padding: 3em 3em;
 	border:  8px solid rgba(0,0,0,.6);
-	margin: 6% 35%;
 	background: hsl(0, 0%, 50%) -35% -35%;
 	background-size: 142% 142%;
 	text-align: center;
@@ -153,20 +168,18 @@ output .error {
 }
 
 .color-display h1 {
-	position: absolute;
+/*	position: absolute;
 	left: 48%;
 	top: 55%;
-	max-width: 48rem;
+	max-width: 48rem;*/
 	margin-top: 0;
 	direction: ltr;
 }
 
 .color-display p {
-	position: absolute;
+/*	position: absolute;
 	left: 35%;
-	top: 60%;
-	max-width: 48rem;
-	margin-top: 0;
+	top: 60%;*/
 	direction: ltr;
 }
 
@@ -255,7 +268,7 @@ button {
 	position: relative;
 	padding: .2em .5em .1em;
 	left:15rem;
-	top:-20rem;
+	top:2rem;
 	border: 1px solid rgba(0,0,0,.5);
 	border-radius: .3em;
 	box-shadow: 0 1px white inset,

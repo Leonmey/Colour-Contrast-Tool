@@ -8,6 +8,9 @@
 	<link rel="shortcut icon"  type="image/png" href="about:blank" />
 	<script src="prefixfree.min.js"></script>
 	<script src="jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="jquery.wheelcolorpicker.js"></script>
+	<link type="text/css" rel="stylesheet" href="wheelcolorpicker.css">
+	
 </head>
 <body>
 
@@ -29,17 +32,34 @@
 			<div class="input-display">
 				<label class="background">
 					<span>Background:</span>
-					<input id="background" value="white" autofocus data-wheelcolorpicker="" />
+					<input id="background" value="white" autofocus />
+					
 				</label>
-
-				<button id="swap">Swap</button>
-				
+				<input type ="image" src="swap.png" class="swap" id="swap">	
 				<label class="foreground">
 					<span>Text color:</span>
 					<input id="foreground" value="hsla(200,0%,0%,.7)" />
 				</label>
 			</div>
 
+			<input type="image" src = "Color picker.png" class="wheel" id="wheel-bg" data-wheelcolorpicker=""/>
+			<script type="text/javascript">
+				jQuery(function() {
+					jQuery('#wheel-bg').on('slidermove', function() {
+						jQuery('#background').val(jQuery(this).wheelColorPicker('getValue', 'rgb'));
+						jQuery('#background').trigger("input");	
+					});
+				});
+			</script>
+			<input type="image" src = "Color picker.png" class="wheel2" id="wheel-fg" data-wheelcolorpicker=""/>
+			<script type="text/javascript">
+				jQuery(function() {
+					jQuery('#wheel-fg').on('slidermove', function() {
+						jQuery('#foreground').val(jQuery(this).wheelColorPicker('getValue', 'rgb'));
+						jQuery('#foreground').trigger("input");	
+					});
+				});
+			</script>
 		</div>
 		<div class="text-display">
 			<h1>How to use</h1>
@@ -53,15 +73,11 @@
 		<section id="foregroundDisplay">
 
 		</section>
-
-		<footer></footer>
-
 		<script src="incrementable.js" id="incrementable" async></script>
 		<script src="color.js"></script>
 		<script src="contrast-ratio.js"></script>
 
-		<script type="text/javascript" src="jquery.wheelcolorpicker.js"></script>
-		<link type="text/css" rel="stylesheet" href="wheelcolorpicker.css">
+		
 
 	</body>
 	</html>

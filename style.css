@@ -78,6 +78,7 @@ label > span {
 
 label.background {
 	text-align: center;
+	top: 3.7rem;
 }
 
 label.background > span {
@@ -86,7 +87,7 @@ label.background > span {
 
 label.foreground {
 	text-align: center;
-	top: 5.6rem;
+	top: 5.8rem;
 }
 
 label.foreground > span {
@@ -297,4 +298,38 @@ button:active {
 
 canvas {
 	display: none;
+}
+
+.wheel{
+	display: inline-block;
+	position: relative;
+	top: -5.1rem;
+	right: 1rem;
+	max-width: 1.8rem;
+	min-width: 2.8rem;
+	border-radius: 1rem;
+	height: 2.5rem;
+}
+
+.wheel2{
+	display: inline-block;
+	position: relative;
+	top: 6.8rem;
+	right: 6.8rem;
+	max-width: 1.8rem;
+	min-width: 2.8rem;
+	border-radius: 1rem;
+	height: 2.5rem;
+}
+
+.swap{
+	display:block;
+	position: relative;
+	max-width: 3rem;
+	min-width: 2rem;
+	height: 3rem;
+	top: 5.6rem;
+	left: 12rem;
+	margin: auto;
+	border-radius: 1rem;
 }

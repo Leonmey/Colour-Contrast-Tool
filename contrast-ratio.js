@@ -247,6 +247,7 @@ function hashchange() {
 
 background.oninput =
 foreground.oninput = function() {
+	
 	var valid = colorChanged(this);
 
 	if (valid) {

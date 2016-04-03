@@ -10,7 +10,7 @@
 	<script src="jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="jquery.wheelcolorpicker.js"></script>
 	<link type="text/css" rel="stylesheet" href="wheelcolorpicker.css">
-	
+	<script type="text/javascript" src="jquery.ddslick.js"></script>
 </head>
 <body>
 
@@ -31,19 +31,39 @@
 					<span>Background:</span>
 					<input id="background" value="white" autofocus />
 				</label>
-				<select name="suggestion-bg" class="sug-bg">
-                        <option>Suggestions</option>
-                        <option>two</option>
-                    </select>
+                <div id="myDropdown0">
+					<select name="suggestion-bg" class="sug-bg">
+		                    <option>Suggestions</option>
+		                    <option value="0" data-imagesrc="img.png" ></option>		                    
+		             </select>
+                 </div>
+                 <script>
+                	$('#myDropdown0').ddslick({
+							onSelected: function(selectedData){
+								//callback function: do something with selectedData;
+							}   
+						});
+                </script>
 				<input type ="image" src="swap.png" class="swap" id="swap">	
 				<label class="foreground">
 					<span>Text color:</span>
 					<input id="foreground" value="hsla(200,0%,0%,.7)" />
 				</label>
-				<select name="suggestion-bg" class="sug-fg">
-                        <option>Suggestions</option>
-                        <option>two</option>
-                    </select>
+				
+				<div id="myDropdown1">
+					<select name="suggestion-bg" class="sug-fg">
+		                    <option>Suggestions</option>
+		                    <option value="0" data-imagesrc="img.png" ></option>		                    
+		             </select>
+                 </div>
+                 <script>
+                	$('#myDropdown1').ddslick({
+							onSelected: function(selectedData){
+								//callback function: do something with selectedData;
+							}   
+						});
+                </script>
+                
 			</div>
 
 			<input type="image" src = "Color picker.png" class="wheel" id="wheel-bg" data-wheelcolorpicker=""/>
@@ -73,9 +93,10 @@
 			</div>
 
 		</section>
-		<section>
-			<input id="sidesection" style="" />
-		</section>
+<<<<<<< HEAD
+		
+=======
+>>>>>>> ce3a43112c22eae4ef4139f6f5e50723d2010461
 		<section id="foregroundDisplay">
 
 		</section>

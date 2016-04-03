@@ -347,20 +347,27 @@ canvas {
 .sug-fg{
 	display: inline-block;
 	position: relative;
-    top: 7.8rem;
+    top: 1.8rem;
     left: -11.9rem;
 }
-
-.sidesection > input{
-    background-color:rgba(0, 0, 0, 0);
-    color:transparent;
-    border: none;
-    outline:none;
-    height:50px;
-    width: 5px;
-    float:right;
-	border:  0;
-	text-shadow: 0;
-	font: 150% Consolas, Monaco, 'Andale Mono', 'Lucida Console', monospace;
-	box-shadow: 0;
+#myDropdown0{
+	display: inline-block;
+	position: relative;
+    top: 8.8rem;
+    left: -6.9rem;
+    max-width: 14rem;
+	min-width: 14rem;
 }
+
+#myDropdown1{
+	display: inline-block;
+	position: relative;
+    top: 8.6rem;
+    left: -6.9rem;
+    width:10rem;
+    max-width: 14rem;
+	min-width: 14rem;
+}
+
+
+

@@ -43,7 +43,7 @@
 					<span>Text color:</span>
 					<input id="foreground" value="hsla(200,0%,0%,.7)" />
 				</label>
-				<select name="suggestion-bg" class="sug-fg">
+				<select name="suggestion-bg" class="sug-bg">
                         <option>Suggestions</option>
                         <option>two</option>
                     </select>

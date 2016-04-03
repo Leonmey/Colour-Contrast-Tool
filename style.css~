@@ -168,7 +168,7 @@ output .error {
 	top: 0;
 	bottom: 0;
 	z-index: -1;
-	padding: 3em 1em 1em;
+	padding: 1em 1em 1em;
 }
 
 .color-display h1 {

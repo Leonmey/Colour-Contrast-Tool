@@ -34,7 +34,10 @@
                 <div id="myDropdown0">
 					<select name="suggestion-bg" class="sug-bg">
 		                    <option>Suggestions</option>
-		                    <option value="0" data-imagesrc="img.png" ></option>		                    
+		                    <option value="0" data-imagesrc="Suggestions/score21.0.png" >21.0</option>
+		                    <option value="0" data-imagesrc="Suggestions/score18.3.png" >18.3</option>
+		                    <option value="0" data-imagesrc="Suggestions/score16.7.png" >16.7</option>
+		                    <option value="0" data-imagesrc="Suggestions/score15.1.png" >15.1</option>		                    
 		             </select>
                  </div>
                  <script>
@@ -53,7 +56,10 @@
 				<div id="myDropdown1">
 					<select name="suggestion-bg" class="sug-fg">
 		                    <option>Suggestions</option>
-		                    <option value="0" data-imagesrc="img.png" ></option>		                    
+		                    <option value="0" data-imagesrc="Suggestions/score21.0.png" >21.0</option>
+		                    <option value="0" data-imagesrc="Suggestions/score18.3.png" >18.3</option>
+		                    <option value="0" data-imagesrc="Suggestions/score16.7.png" >16.7</option>
+		                    <option value="0" data-imagesrc="Suggestions/score15.1.png" >15.1</option>			                    
 		             </select>
                  </div>
                  <script>
@@ -93,10 +99,6 @@
 			</div>
 
 		</section>
-<<<<<<< HEAD
-		
-=======
->>>>>>> ce3a43112c22eae4ef4139f6f5e50723d2010461
 		<section id="foregroundDisplay">
 
 		</section>

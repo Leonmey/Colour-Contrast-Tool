@@ -208,7 +208,7 @@ output .error {
 	display: none;
 }
 
-#results {
+/*#results {
 	position: absolute;
 	left: 50%;
 	width: 15em;
@@ -224,7 +224,7 @@ output .error {
 	transform: scale(0);
 	transform-origin: top;
 	transition: .4s transform;
-}
+}*/
 
 output:focus + #results,
 output:hover + #results {

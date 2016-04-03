@@ -14,14 +14,7 @@
 </head>
 <body>
 
-<<<<<<< HEAD
 	<h1><a href="#"><span>Colour</span> <strong>able</strong></a></h1>
-=======
-	<h1><a href="#"><span>Co</span> <strong>lourable</strong></a></h1>
->>>>>>> 0f26dc2988b5ae205726c752ff614f4e514fda14
-
-
-
 
 	<section id="results">
 
@@ -80,7 +73,9 @@
 			</div>
 
 		</section>
-		
+		<section>
+			<input id="sidesection" style="" />
+		</section>
 		<section id="foregroundDisplay">
 
 		</section>

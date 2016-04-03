@@ -168,7 +168,7 @@ output .error {
 	top: 0;
 	bottom: 0;
 	z-index: -1;
-	padding: 1em 1em 1em;
+	padding: 3em 1em 1em;
 }
 
 .color-display h1 {
@@ -349,4 +349,18 @@ canvas {
 	position: relative;
     top: 7.8rem;
     left: -11.9rem;
+}
+
+.sidesection > input{
+    background-color:rgba(0, 0, 0, 0);
+    color:transparent;
+    border: none;
+    outline:none;
+    height:50px;
+    width: 5px;
+    float:right;
+	border:  0;
+	text-shadow: 0;
+	font: 150% Consolas, Monaco, 'Andale Mono', 'Lucida Console', monospace;
+	box-shadow: 0;
 }

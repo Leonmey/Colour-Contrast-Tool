@@ -36,7 +36,7 @@
 		             </select>
                  </div>
                  <script>
-                	$('#myDropdown0').ddslick({
+                	jQuery('#myDropdown0').ddslick({
 							onSelected: function(selectedData){
 								//callback function: do something with selectedData;
 							}   
@@ -45,7 +45,7 @@
 				<input type ="image" src="swap.png" class="swap" id="swap">	
 				<label class="foreground">
 					<span>Text colour:</span>
-					<input id="foreground" value="hsla(200,0%,0%,.7)" />
+					<input id="foreground" value="black" />
 				</label>
 				
 				<div id="myDropdown1">
@@ -58,10 +58,9 @@
 		             </select>
                  </div>
                  <script>
-                	$('#myDropdown1').ddslick({
+                	jQuery('#myDropdown1').ddslick({
 							onSelected: function(selectedData){
-								//callback function: do something with selectedData;
-							}   
+							}
 						});
                 </script>
                 
